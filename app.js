@@ -1,6 +1,6 @@
-function slidesPluguin(activeSlide = 0) {
+function slidesPlugin(activeSlide = 0) {
     const slides = document.querySelectorAll('.slide')
-    slides[activeSlide].classList('active')
+    slides[activeSlide].classList.add('active')
 
     for (const slide of slides) {
         slide.addEventListener('click', () =>{
@@ -16,4 +16,4 @@ function slidesPluguin(activeSlide = 0) {
      }
 }
 
-slidesPluguin()
+slidesPlugin()
